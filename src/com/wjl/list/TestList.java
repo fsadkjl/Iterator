@@ -28,5 +28,14 @@ public class TestList {
 //			Integer integer = (Integer) it.next();
 			System.out.println(it.next());
 		}
+		//in java8
+		System.out.println("in java8");
+		List<String> list1 = new ArrayList<String>();
+		list1.add("wo");
+		list1.add("2");
+		list1.add("3");
+		list1.add("4");
+		list1.forEach(n -> System.out.println(n));
+		list1.forEach(System.out::println);
 	}
 }
